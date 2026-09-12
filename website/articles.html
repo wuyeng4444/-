@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全部文章 · 无影</title>
+  <link rel="icon" href="favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="articles">
+<header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="emblem"></span>
+        <span>无影</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="contents.html" data-nav="contents">目录</a>
+        <a href="articles.html" data-nav="articles">文章</a>
+        <a href="tags.html" data-nav="tags">标签</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 class="page-title">全部文章</h1>
+    <p class="page-sub">搜索、筛选并浏览所有设定条目。</p>
+
+    <div class="toolbar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="搜索标题、标签或正文关键词…">
+      </div>
+      <select class="filter-select" id="cat-filter">
+        <option value="">全部分类</option>
+      </select>
+      <span id="result-count" style="color:var(--text-faint);font-size:13px;white-space:nowrap;"></span>
+      <button id="new-article-btn" class="new-article-btn" type="button">＋ 新建文章</button>
+    </div>
+
+    <div class="article-list" id="article-list"></div>
+  </div>
+
+  <footer class="site-footer">
+    <span>无影</span>
+    <span class="sep">·</span>
+    <span>世界观设定集</span>
+  </footer>
+
+  <script src="assets/js/characters.js"></script>
+  <script src="assets/js/articles.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

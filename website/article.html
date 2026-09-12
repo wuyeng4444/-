@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章详情 · 无影</title>
+  <link rel="icon" href="favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="article">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="emblem"></span>
+        <span>无影</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="contents.html" data-nav="contents">目录</a>
+        <a href="articles.html" data-nav="articles">文章</a>
+        <a href="tags.html" data-nav="tags">标签</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <article>
+      <header class="article-header">
+        <span class="cat-chip" id="article-category">分类</span>
+        <h1 id="article-title">文章标题</h1>
+        <div class="meta-line" id="article-meta"></div>
+      </header>
+
+      <div class="article-body" id="article-body"></div>
+
+      <footer class="article-footer">
+        <a class="back-link" href="articles.html">← 返回文章列表</a>
+        <div class="prev-next" id="prev-next"></div>
+      </footer>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <span>无影</span>
+    <span class="sep">·</span>
+    <span>世界观设定集</span>
+  </footer>
+
+  <script src="assets/js/articles.js"></script>
+  <script src="assets/js/marked.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

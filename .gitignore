@@ -1,0 +1,21 @@
+# WorkBuddy 项目数据（记忆/技能等，勿上传）
+.workbuddy/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时 / 备份文件
+*.bak
+*.bak2
+*.tmp
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 本地源文件备份
+*.txt.bak
