@@ -89,7 +89,7 @@
       aside.setAttribute("aria-hidden", "true");
       aside.innerHTML =
         '<div class="kiana-figure">' +
-        '<img class="kiana-img" src="' + esc(item.c.src) + '" alt="角色立绘">' +
+        '<img class="kiana-img" src="' + esc(item.c.src) + '" alt="角色立绘" loading="lazy">' +
         '</div>';
       document.body.insertBefore(aside, document.body.firstChild);
     });
@@ -340,6 +340,7 @@
         return "<p>" + esc(line) + "</p>";
       }).join("");
     }
+    bodyEl.querySelectorAll("img").forEach(function (img) { img.loading = "lazy"; });
   }
 
   function openKeyModal(onSuccess) {
