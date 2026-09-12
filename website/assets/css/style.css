@@ -168,12 +168,15 @@ a:hover { color: var(--accent); }
 
 .stats-row {
   display: flex;
-  gap: 28px;
+  gap: 48px;
   flex-wrap: wrap;
-  padding: 18px 0 6px;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 28px;
+  padding: 18px 44px 6px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  margin-bottom: 28px;
 }
 .stat .num {
   font-family: var(--font-serif);
