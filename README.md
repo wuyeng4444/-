@@ -55,10 +55,18 @@ python -m http.server 8123
 
 ## 部署
 
-纯静态站，可部署到任意静态托管：
+纯静态站，可部署到任意静态托管。
+
+### GitHub Pages（本项目已配置）
+
+线上地址：**https://wuyeng4444.github.io/-/**
+
+通过 `.github/workflows/pages.yml` 自动部署：推送到 `main` 后，Actions 会把 `website/` 目录发布到 Pages。
+（注：GitHub Pages 的「分支」发布方式只能选仓库根目录或 `docs/`，本项目站点在 `website/` 子目录，因此用 Actions 方式。）
+
+### Netlify / Vercel
 
 - **Netlify**：把 `website/` 文件夹拖到 [app.netlify.com/drop](https://app.netlify.com/drop)
-- **GitHub Pages**：仓库 Settings → Pages → 发布源选 `website/` 目录
 - **Vercel**：导入仓库，输出目录设为 `website`
 
 ## 说明
