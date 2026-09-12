@@ -89,7 +89,7 @@
       aside.setAttribute("aria-hidden", "true");
       aside.innerHTML =
         '<div class="kiana-figure">' +
-        '<img class="kiana-img" src="' + esc(item.c.src) + '" alt="角色立绘" loading="lazy">' +
+        '<img class="kiana-img" src="' + esc(item.c.src) + '" alt="角色立绘">' +
         '</div>';
       document.body.insertBefore(aside, document.body.firstChild);
     });
